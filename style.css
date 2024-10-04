@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+ body{
+    background-color: #F8F5F4;
+}
+.light-color{
+    background-color: black;
+    color: #F8F5F4;
+}
+nav{
+    font-family: 'Mali', cursive;
+    padding: 20px;
+}
+.list ul li{
+    font-weight: 10px;
+    font-size: 15px;
+    transition: 0.2s ;
+}
+.list ul li:hover{
+    color: lightblue;
+}
+.icon-btn{
+    border: none;
+    color: black;
+    border: 1px solid;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+}
+.h{
+    font-family: "Poppins", sans-serif;
+}
+.abouts{
+    margin-top: 150px;
+}
+.about-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-page .small-text{
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+}
+.about-page .big-text{
+    font-family: "DM Serif Display", serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+.about-page .icons{
+    text-decoration: none;
+    font-size: 25px;
+}
+.about-page .icons .linkin{
+    color: black;
+    margin-right: 15px;
+}
+.about-page .icons .git{
+    color: black;
+}
+.about-page  .cv-btn{
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 8px;
+    transition: 0.2s;
+}
+.about-page  .cv-btn:hover{
+    background-color: black;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.me{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 60px 20px 0px 25px;
+    transition: 0.22s ;
+    animation: move 2s infinite ease-in-out forwards;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.cube{
+    margin-left: 40px;
+    margin-top: 75px;
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: black;
+    position: relative;
+}
+.circles{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: black;
+    position: relative;
+    margin-top: 30px;
+}
+.circlese{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: black;
+    position: relative;
+    margin-top: 30px;
+}
+.circle::after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 2px;
+    left: -7px;
+    margin-top: 20px;
+    transform: translateZ(-20px) rotateZ(90deg);
+    border: 1px solid;
+    background-color: black;
+    
+}
+.circles::after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 2px;
+    left: -7px;
+    transform: translateZ(-20px) rotateZ(90deg);
+    border: 1px solid;
+    background-color: black;
+    
+}
+.circlese::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    left: -17px;
+    bottom: 25px;
+    transform: translateZ(-20px) rotateZ(90deg);
+    border: 1px solid;
+    background-color: black;
+    
+}
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text{
+    margin-top: 50px;
+    position: relative;
+    font-weight: bold;
+    margin-left: 100px;
+    font-family: "DM Serif Display", serif;
+    transition: 0.2s;
+    font-size: 25px;
+}
+.text:hover{
+    color: rgb(146, 148, 148);
+}
+.text_about{
+    max-width: 300px;
+    margin-left: 100px;
+}
+.skills{
+    font-family: "DM Serif Display", serif;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.middle_tech_skill{
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+ .tech{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    border: 1px solid;
+}
+.frontend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.skill_set{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.3s all;
+}
+
+.skill_set:hover{
+    background-color: black;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.skill_set span{
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+}
+.skill_set small{
+    font-family:  "Poppins", sans-serif;
+}
+.box-flex{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+.html{
+    width: 50px;
+    height: 50px;
+}
+.git{
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+.project_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project{
+    font-family: "DM Serif Display", serif;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.con{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    margin-top: 30px;
+    width: 400px;
+    height: 250px;
+}
+.mini{
+    font-family: "DM Serif Display", serif;
+}
+.project-description{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-text{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 10px;
+    font-family: "DM Serif Display", serif;  
+}
+.forms{
+    background-color: #F8F5F4;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.forms input{
+    border: 2px solid black;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+
+}
+.forms textarea{
+    width: 300px;
+    border: 2px solid black;
+    height: 80px;
+    border-radius: 15px;
+}
+.forms .content_btn{
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+}
+hr{
+    height: 10px;
+}
+.footers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.information .info{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.card-img-top{
+    height: 200px;
+}
